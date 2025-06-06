@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "DSEG7 Classic";
+  src: url("DSEG7Classic-Bold.ttf") format('truetype');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(45deg, #203a43, #008979);
+  color: white;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#project-heading {
+  padding: 20px;
+}
+
+.container {
+  flex-direction: column;
+  height: 200px;
+  width: 400px;
+  margin: 50px auto;
+  gap: 10px;
+  border-radius: 12px;
+  box-shadow: 1px 1px 5px black;
+  backdrop-filter: blur(2px);
+}
+
+.display {
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  height: 100px;
+  width: 80px;
+}
+
+.card-top {
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  border-radius: 12px;
+}
+.hr {
+  height: 25px;
+  width: 60px;
+  margin: 0 auto;
+}
+.hr hr {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid grey;
+}
+.card-value-shadow {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  color: #c3c3c3;
+  font-size: 45px;
+  text-align: center;
+  font-family: "DSEG7 Classic";
+}
+.card-value {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  color: #203a43;
+  /* color: #203a43; */
+  font-size: 45px;
+  text-align: center;
+  font-family: "DSEG7 Classic";
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.card-title {
+  height: 20px;
+  width: 80px;
+}
+.count-card {
+  position: relative;
+  height: 40px;
+  width: 50px;
+  border-radius: 6px;
+  background-color: white;
+}
+.count-card-value-shadow {
+  height: 100%;
+  width: 100%;
+  color: #8585855b;
+  font-size: 25px;
+  text-align: center;
+  font-family: "DSEG7 Classic";
+}
+.count-card-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #ee7c03;
+  font-size: 25px;
+  text-align: center;
+  font-family: "DSEG7 Classic";
+}
+.buttons {
+  gap: 10px;
+}
+.buttons > div {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: linear-gradient(135deg, rgb(0, 165, 198), rgb(1, 87, 121));
+}
+.buttons > div i {
+  font-size: 25px;
+}
+.buttons > div:hover {
+  transform: translateY(-3px);
+}
+.buttons > div:hover i {
+  color: rgb(203, 255, 236);
+}
+
+.lap-list {
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 50px;
+  list-style-type: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lap-list li {
+  background-color: white;
+  color: rgb(33, 33, 33);
+  font-weight: bold;
+  text-align: center;
+  height: 35px;
+  width: 120%;
+  padding: 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(198, 0, 106);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.218);
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: calc(100% - 10px);
+  }
+  .display {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    height: 150px;
+  }
+  .card,
+  .count-card {
+    zoom: 0.7;
+  }
+  .buttons > div {
+    width: 35px;
+    height: 35px;
+  }
+  .buttons > div i {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 260px) {
+  #project-heading {
+    padding: 20px 5px;
+    font-size: 18px;
+  }
+  .container {
+    zoom: 0.6;
+  }
+
+  .lap-list li {
+    height: fit-content;
+    font-size: 10px;
+    padding: 20px 5px;
+  }
+}
+@media screen and (max-width: 150px) {
+  #project-heading {
+    padding: 20px 5px;
+    font-size: 14px;
+  }
+  .container {
+    zoom: 0.3;
+  }
+
+  .lap-list li {
+    font-size: 5px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 80px) {
+  #project-heading {
+    padding: 20px 3px;
+    font-size: 10px;
+  }
+  .container {
+    zoom: 0.2;
+  }
+
+  .lap-list li {
+    font-size: 4px;
+    padding: 5px 3px;
+  }
+}
+
+@media screen and (max-width: 51px) {
+  body {
+    display: none;
+  }
+}
