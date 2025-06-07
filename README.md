@@ -47,12 +47,12 @@ This project is built using core front-end web technologies:
 ## 📁 Project Structure
 
    root folder/
-   ├── index.html
-   ├── style.css
-   ├── script.js
-   ├── clockFont.ttf
-   ├── LICENSE
-   └── README.md
+    ├── index.html                  # Main landing page
+    ├── style.css                   # All styles and responsive media queries
+    ├── script.js                   # JavaScript for scroll and hover behaviors   
+    ├── DSEG7Classic-Bold.ttf       # Digital Clock font
+    ├── LICENSE                     # MIT License
+    └── README.md                   # Details of the project
 
 ---
 
@@ -61,9 +61,11 @@ This project is built using core front-end web technologies:
 1. **Clone this repository**
    ```bash
    git clone https://github.com/mrrakara/PRODIGY_WD_02.git
+   ```
+   ```bash
    cd PRODIGY_WD_02
    ```
-
+   
 2. **Open the project**
    - Launch `index.html` in your browser
 
