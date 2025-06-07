@@ -46,13 +46,13 @@ This project is built using core front-end web technologies:
 
 ## 📁 Project Structure
 
-   root folder/
-    ├── index.html                  # Main landing page
-    ├── style.css                   # All styles and responsive media queries
-    ├── script.js                   # JavaScript for scroll and hover behaviors   
-    ├── DSEG7Classic-Bold.ttf       # Digital Clock font
-    ├── LICENSE                     # MIT License
-    └── README.md                   # Details of the project
+   root-folder/
+   ├── index.html # Main landing page
+   ├── style.css # All styles and responsive media queries
+   ├── script.js # JavaScript for scroll and hover behaviors   
+   ├── DSEG7Classic-Bold.ttf # Digital Clock font
+   ├── LICENSE # MIT License
+   └── README.md # Details of the project
 
 ---
 
